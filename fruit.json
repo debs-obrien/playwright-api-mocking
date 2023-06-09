@@ -19,7 +19,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Fragaria",
-    "img": "https://commons.wikimedia.org/wiki/File:La_Trinidad_strawberries.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/73/La_Trinidad_strawberries.jpg?20070506152740",
     "nutritions": {
       "calories": 29,
       "fat": 0.4,
@@ -34,7 +34,7 @@
     "family": "Musaceae",
     "order": "Zingiberales",
     "genus": "Musa",
-    "img": "https://commons.wikimedia.org/wiki/File:Banana.arp.750pix.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Banana.arp.750pix.jpg?20120808120432",
     "nutritions": {
       "calories": 96,
       "fat": 0.2,
@@ -63,7 +63,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Pyrus",
-    "img": "https://commons.wikimedia.org/wiki/File:Pears.png",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pears.png/600px-Pears.png?20090119145821",
     "nutritions": {
       "calories": 57,
       "fat": 0.1,
@@ -120,7 +120,7 @@
     "family": "Actinidiaceae",
     "order": "Struthioniformes",
     "genus": "Apteryx",
-    "img": "https://commons.wikimedia.org/wiki/File:Mature_kiwifruit.JPG",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Mature_kiwifruit.JPG/602px-Mature_kiwifruit.JPG?20101110141808",
     "nutritions": {
       "calories": 61,
       "fat": 0.5,
@@ -149,7 +149,7 @@
     "family": "Bromeliaceae",
     "order": "Poales",
     "genus": "Ananas",
-    "img": "https://commons.wikimedia.org/wiki/File:Pineapples_Kenya.jpg",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Pineapples_Kenya.jpg/800px-Pineapples_Kenya.jpg?20220209114419",
     "nutritions": {
       "calories": 50,
       "fat": 0.12,
