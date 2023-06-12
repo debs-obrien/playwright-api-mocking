@@ -1,9 +1,38 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
+type Fruit = {
+  name: string
+  family: string
+  genus: string
+  nutritions: {
+    calories: number
+    fat: number
+    sugar: number
+    carbohydrates: number
+    protein: number
+  }
+  img: string
+}
+
 function FetchAPI() {
-  const num = Math.floor(Math.random() * 12)
-  const [fruit, setFruit] = useState(null)
+  const num: number = Math.floor(Math.random() * 19)
+  const [fruit, setFruit] = useState<Fruit[] | null>(null)
+  const randomFruit: Fruit = fruit
+    ? fruit[num]
+    : {
+        name: '',
+        family: '',
+        genus: '',
+        nutritions: {
+          calories: 0,
+          fat: 0,
+          sugar: 0,
+          carbohydrates: 0,
+          protein: 0,
+        },
+        img: '',
+      }
 
   useEffect(() => {
     fetch(
@@ -22,15 +51,15 @@ function FetchAPI() {
       <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
         <div className="w-full md:w-1/3 bg-white grid place-items-center">
           <img
-            src={fruit[num].img}
-            alt={fruit[num].name}
+            src={randomFruit.img}
+            alt={randomFruit.name}
             className="rounded-xl"
           />
         </div>
         <div className="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
           <div className="flex justify-between item-center">
             <p className="text-gray-500 font-medium hidden md:block">
-              {fruit[num].family}
+              {randomFruit.family}
             </p>
             {/* <div className="flex items-center">
               <svg
@@ -61,19 +90,19 @@ function FetchAPI() {
               </svg>
             </div> */}
             <div className="bg-gray-200 px-3 py-1 rounded-full text-xs font-medium text-gray-800 hidden md:block">
-              {fruit[num].genus}
+              {randomFruit.genus}
             </div>
           </div>
           <h3 className="font-black text-gray-800 md:text-3xl text-xl">
-            {fruit[num].name}
+            {randomFruit.name}
           </h3>
 
           <ul className="text-xl text-gray-800">
-            <li>Calories: {fruit[num].nutritions.calories}</li>
-            <li>Fat: {fruit[num].nutritions.fat}</li>
-            <li>Sugar: {fruit[num].nutritions.sugar}</li>
-            <li>Carbohydrates: {fruit[num].nutritions.carbohydrates}</li>
-            <li>Protein: {fruit[num].nutritions.protein}</li>
+            <li>Calories: {randomFruit.nutritions.calories}</li>
+            <li>Fat: {randomFruit.nutritions.fat}</li>
+            <li>Sugar: {randomFruit.nutritions.sugar}</li>
+            <li>Carbohydrates: {randomFruit.nutritions.carbohydrates}</li>
+            <li>Protein: {randomFruit.nutritions.protein}</li>
           </ul>
 
           {/* <p className="text-xl font-black text-gray-800">
