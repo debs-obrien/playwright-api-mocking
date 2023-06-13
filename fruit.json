@@ -105,21 +105,6 @@
     }
   },
   {
-    "name": "Fig",
-    "id": 68,
-    "family": "Moraceae",
-    "order": "Rosales",
-    "genus": "Ficus",
-    "fig": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Ficus_carica_whole_fruits_and_fruit_cut_open.jpg/640px-Ficus_carica_whole_fruits_and_fruit_cut_open.jpg",
-    "nutritions": {
-      "calories": 74,
-      "fat": 0.3,
-      "sugar": 16,
-      "carbohydrates": 19,
-      "protein": 0.8
-    }
-  },
-  {
     "name": "Passionfruit",
     "id": 70,
     "family": "Passifloraceae",
