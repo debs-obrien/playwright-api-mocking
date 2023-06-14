@@ -5,7 +5,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Fragaria",
-    "img": "./images/La_Trinidad_strawberries.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/La_Trinidad_strawberries.jpg",
     "nutritions": {
       "calories": 29,
       "fat": 0.4,
@@ -20,7 +20,7 @@
     "family": "Musaceae",
     "order": "Zingiberales",
     "genus": "Musa",
-    "img": "./images/Banana.arp.750pix.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Banana.arp.750pix.jpg",
     "nutritions": {
       "calories": 96,
       "fat": 0.2,
@@ -35,7 +35,7 @@
     "family": "Solanaceae",
     "order": "Solanales",
     "genus": "Solanum",
-    "img": "./images/Tomato_with_Tomato_Spotted_Wilt_Virus.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Tomato_with_Tomato_Spotted_Wilt_Virus.jpg",
     "nutritions": {
       "calories": 74,
       "fat": 0.2,
@@ -50,7 +50,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Pyrus",
-    "img": "./images/600px-Pears.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/600px-Pears.jpg",
     "nutritions": {
       "calories": 57,
       "fat": 0.1,
@@ -65,7 +65,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Rubus",
-    "img": "./images/Blackberries_by_feiern1.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Blackberries_by_feiern1.jpg",
     "nutritions": {
       "calories": 40,
       "fat": 0.4,
@@ -80,7 +80,7 @@
     "family": "Actinidiaceae",
     "order": "Struthioniformes",
     "genus": "Apteryx",
-    "img": "./images/602px-Mature_kiwifruit.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/602px-Mature_kiwifruit.jpg",
     "nutritions": {
       "calories": 61,
       "fat": 0.5,
@@ -95,7 +95,7 @@
     "family": "Bromeliaceae",
     "order": "Poales",
     "genus": "Ananas",
-    "img": "./images/Pineapples_Kenya.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Pineapples_Kenya.jpg",
     "nutritions": {
       "calories": 50,
       "fat": 0.12,
@@ -110,7 +110,7 @@
     "family": "Passifloraceae",
     "order": "Malpighiales",
     "genus": "Passiflora",
-    "img": "./images/Passiflora-edulis.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Passiflora-edulis.jpg",
     "nutritions": {
       "calories": 97,
       "fat": 0.7,
@@ -125,7 +125,7 @@
     "family": "Rutaceae",
     "order": "Sapindales",
     "genus": "Citrus",
-    "img": "./images/Sliced_orange_whitescreen.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Sliced_orange_whitescreen.jpg",
     "nutritions": {
       "calories": 43,
       "fat": 0.2,
@@ -140,7 +140,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Rubus",
-    "img": "./images/Framboise_Margy_3.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Framboise_Margy_3.jpg",
     "nutritions": {
       "calories": 53,
       "fat": 0.7,
@@ -155,7 +155,7 @@
     "family": "Cucurbitaceae",
     "order": "Cucurbitales",
     "genus": "Citrullus",
-    "img": "./images/Watermelon_-_Fruit_Bazaar_-_near_Besat_sq_-_Nishapur_12.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Watermelon_-_Fruit_Bazaar_-_near_Besat_sq_-_Nishapur_12.jpg",
     "nutritions": {
       "calories": 30,
       "fat": 0.2,
@@ -170,7 +170,7 @@
     "family": "Rutaceae",
     "order": "Sapindales",
     "genus": "Citrus",
-    "img": "./images/Lemon03.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Lemon03.jpg",
     "nutritions": {
       "calories": 29,
       "fat": 0.3,
@@ -185,7 +185,7 @@
     "family": "Anacardiaceae",
     "order": "Sapindales",
     "genus": "Mangifera",
-    "img": "./images/Mango.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Mango.jpg",
     "nutritions": {
       "calories": 60,
       "fat": 0.38,
@@ -200,7 +200,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Fragaria",
-    "img": "./images/Aberdeenshire_blueberries.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Aberdeenshire_blueberries.jpg",
     "nutritions": {
       "calories": 29,
       "fat": 0.4,
@@ -215,7 +215,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Malus",
-    "img": "./images/Apples_in_basket.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Apples_in_basket.jpg",
     "nutritions": {
       "calories": 52,
       "fat": 0.4,
@@ -245,7 +245,7 @@
     "family": "Rutaceae",
     "order": "Sapindales",
     "genus": "Citrus",
-    "img": "./images/Key_lime.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Key_lime.jpg",
     "nutritions": {
       "calories": 25,
       "fat": 0.1,
