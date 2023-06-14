@@ -52,6 +52,7 @@ test('gets the json from api and adds a star rating to each fruit', async ({
   // Go to the page
   await page.goto('/');
   // Assert that the stars are visible
+  await page.waitForTimeout(3000);
   await expect(page.getByRole('img', { name: 'star' })).toBeVisible();
   await expect(page.getByText('5', { exact: true })).toBeVisible();
 });
@@ -62,7 +63,25 @@ test('gets the har file from api and runs test against it', async ({
   // Get the response and add to it
   await page.routeFromHAR('./hars/fruit.har', {
     url: 'https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/main/fruit.json',
+    update: true,
   });
   // Go to the page
   await page.goto('/');
+
+  await expect(page.getByText('Protein')).toBeVisible();
+});
+
+test('gets the json from HAR and checks the stars have been added for each fruit', async ({
+  page,
+}) => {
+  // Get the response and add to it
+  await page.routeFromHAR('./hars/fruit.har', {
+    url: 'https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/main/fruit.json',
+    update: false,
+  });
+  // Go to the page
+  await page.goto('/');
+  // Assert that the stars are visible
+  await page.waitForTimeout(3000);
+  await expect(page.getByRole('img', { name: 'star' })).toBeVisible();
 });
