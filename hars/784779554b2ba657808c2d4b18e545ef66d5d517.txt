@@ -5,7 +5,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Fragaria",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/7/73/La_Trinidad_strawberries.jpg?20070506152740",
+    "img": "./images/La_Trinidad_strawberries.jpg",
     "nutritions": {
       "calories": 29,
       "fat": 0.4,
@@ -14,14 +14,14 @@
       "protein": 0.8
     },
     "stars": 5
-    },
+  },
   {
     "name": "Banana",
     "id": 1,
     "family": "Musaceae",
     "order": "Zingiberales",
     "genus": "Musa",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Banana.arp.750pix.jpg?20120808120432",
+    "img": "./images/Banana.arp.750pix.jpg",
     "nutritions": {
       "calories": 96,
       "fat": 0.2,
@@ -37,7 +37,7 @@
     "family": "Solanaceae",
     "order": "Solanales",
     "genus": "Solanum",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Tomato_with_Tomato_Spotted_Wilt_Virus.jpg/640px-Tomato_with_Tomato_Spotted_Wilt_Virus.jpg",
+    "img": "./images/Tomato_with_Tomato_Spotted_Wilt_Virus.jpg",
     "nutritions": {
       "calories": 74,
       "fat": 0.2,
@@ -45,7 +45,7 @@
       "carbohydrates": 3.9,
       "protein": 0.9
     },
-    "stars": 3
+    "stars": 5
   },
   {
     "name": "Pear",
@@ -53,7 +53,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Pyrus",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pears.png/600px-Pears.png?20090119145821",
+    "img": "./images/600px-Pears.jpg",
     "nutritions": {
       "calories": 57,
       "fat": 0.1,
@@ -69,7 +69,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Rubus",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Blackberries_by_feiern1.jpg/640px-Blackberries_by_feiern1.jpg",
+    "img": "./images/Blackberries_by_feiern1.jpg",
     "nutritions": {
       "calories": 40,
       "fat": 0.4,
@@ -77,7 +77,7 @@
       "carbohydrates": 9,
       "protein": 1.3
     },
-    "stars": 5
+    "stars": 2
   },
   {
     "name": "Kiwi",
@@ -85,7 +85,7 @@
     "family": "Actinidiaceae",
     "order": "Struthioniformes",
     "genus": "Apteryx",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Mature_kiwifruit.JPG/602px-Mature_kiwifruit.JPG?20101110141808",
+    "img": "./images/602px-Mature_kiwifruit.jpg",
     "nutritions": {
       "calories": 61,
       "fat": 0.5,
@@ -93,7 +93,7 @@
       "carbohydrates": 15,
       "protein": 1.1
     },
-    "stars": 2
+    "stars": 5
   },
   {
     "name": "Pineapple",
@@ -101,7 +101,7 @@
     "family": "Bromeliaceae",
     "order": "Poales",
     "genus": "Ananas",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Pineapples_Kenya.jpg/800px-Pineapples_Kenya.jpg?20220209114419",
+    "img": "./images/Pineapples_Kenya.jpg",
     "nutritions": {
       "calories": 50,
       "fat": 0.12,
@@ -109,7 +109,7 @@
       "carbohydrates": 13.12,
       "protein": 0.54
     },
-    "stars": 5
+    "stars": 4
   },
   {
     "name": "Passionfruit",
@@ -117,7 +117,7 @@
     "family": "Passifloraceae",
     "order": "Malpighiales",
     "genus": "Passiflora",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Passiflora-edulis-1.jpg/640px-Passiflora-edulis-1.jpg",
+    "img": "./images/Passiflora-edulis.jpg",
     "nutritions": {
       "calories": 97,
       "fat": 0.7,
@@ -128,28 +128,12 @@
     "stars": 5
   },
   {
-    "name": "Plum",
-    "id": 71,
-    "family": "Rosaceae",
-    "order": "Rosales",
-    "genus": "Prunus",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Red-Plums.jpg/640px-Red-Plums.jpg",
-    "nutritions": {
-      "calories": 46,
-      "fat": 0.28,
-      "sugar": 9.92,
-      "carbohydrates": 11.4,
-      "protein": 0.7
-    },
-    "stars": 1
-  },
-  {
     "name": "Orange",
     "id": 2,
     "family": "Rutaceae",
     "order": "Sapindales",
     "genus": "Citrus",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sliced_orange_whitescreen.jpg/640px-Sliced_orange_whitescreen.jpg",
+    "img": "./images/Sliced_orange_whitescreen.jpg",
     "nutritions": {
       "calories": 43,
       "fat": 0.2,
@@ -157,7 +141,7 @@
       "carbohydrates": 8.3,
       "protein": 1
     },
-    "stars": 3
+    "stars": 5
   },
   {
     "name": "Raspberry",
@@ -165,7 +149,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Rubus",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Framboise_Margy_3.jpg/640px-Framboise_Margy_3.jpg",
+    "img": "./images/Framboise_Margy_3.jpg",
     "nutritions": {
       "calories": 53,
       "fat": 0.7,
@@ -173,7 +157,7 @@
       "carbohydrates": 12,
       "protein": 1.2
     },
-    "stars": 4
+    "stars": 3
   },
   {
     "name": "Watermelon",
@@ -181,7 +165,7 @@
     "family": "Cucurbitaceae",
     "order": "Cucurbitales",
     "genus": "Citrullus",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Watermelon_-_Fruit_Bazaar_-_near_Besat_sq_-_Nishapur_12.jpg/640px-Watermelon_-_Fruit_Bazaar_-_near_Besat_sq_-_Nishapur_12.jpg",
+    "img": "./images/Watermelon_-_Fruit_Bazaar_-_near_Besat_sq_-_Nishapur_12.jpg",
     "nutritions": {
       "calories": 30,
       "fat": 0.2,
@@ -189,7 +173,7 @@
       "carbohydrates": 8,
       "protein": 0.6
     },
-    "stars": 5
+    "stars": 4
   },
   {
     "name": "Lemon",
@@ -197,7 +181,7 @@
     "family": "Rutaceae",
     "order": "Sapindales",
     "genus": "Citrus",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lemon03.jpg/640px-Lemon03.jpg",
+    "img": "./images/Lemon03.jpg",
     "nutritions": {
       "calories": 29,
       "fat": 0.3,
@@ -213,7 +197,7 @@
     "family": "Anacardiaceae",
     "order": "Sapindales",
     "genus": "Mangifera",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mango-21549.jpg/640px-Mango-21549.jpg",
+    "img": "./images/Mango.jpg",
     "nutritions": {
       "calories": 60,
       "fat": 0.38,
@@ -221,7 +205,7 @@
       "carbohydrates": 15,
       "protein": 0.82
     },
-    "stars": 3
+    "stars": 2
   },
   {
     "name": "Blueberry",
@@ -229,7 +213,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Fragaria",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Aberdeenshire_blueberries.jpg/640px-Aberdeenshire_blueberries.jpg",
+    "img": "./images/Aberdeenshire_blueberries.jpg",
     "nutritions": {
       "calories": 29,
       "fat": 0.4,
@@ -237,7 +221,7 @@
       "carbohydrates": 5.5,
       "protein": 0
     },
-    "stars": 5
+    "stars": 3
   },
   {
     "name": "Apple",
@@ -245,7 +229,7 @@
     "family": "Rosaceae",
     "order": "Rosales",
     "genus": "Malus",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Apples_in_basket_2018_G2.jpg/640px-Apples_in_basket_2018_G2.jpg",
+    "img": "./images/Apples_in_basket.jpg",
     "nutritions": {
       "calories": 52,
       "fat": 0.4,
@@ -253,7 +237,7 @@
       "carbohydrates": 11.4,
       "protein": 0.3
     },
-    "stars": 5
+    "stars": 4
   },
   {
     "name": "Melon",
@@ -261,7 +245,7 @@
     "family": "Cucurbitaceae",
     "order": "Cucurbitaceae",
     "genus": "Cucumis",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/8440BreadTalk_Philippines_Cucumis_melo_12.jpg/640px-8440BreadTalk_Philippines_Cucumis_melo_12.jpg",
+    "img": "Philippines_Cucumis_melo.jpg",
     "nutritions": {
       "calories": 34,
       "fat": 0,
@@ -269,7 +253,7 @@
       "carbohydrates": 8,
       "protein": 0
     },
-    "stars": 4
+    "stars": 5
   },
   {
     "name": "Lime",
@@ -277,7 +261,7 @@
     "family": "Rutaceae",
     "order": "Sapindales",
     "genus": "Citrus",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Key_lime.jpg/640px-Key_lime.jpg",
+    "img": "./images/Key_lime.jpg",
     "nutritions": {
       "calories": 25,
       "fat": 0.1,
@@ -285,6 +269,6 @@
       "carbohydrates": 8.4,
       "protein": 0.3
     },
-    "stars": 2
+    "stars": 5
   }
 ]

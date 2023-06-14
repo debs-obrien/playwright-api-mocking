@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import './App.css';
 
 type Fruit = {
@@ -21,7 +21,8 @@ function FetchAPI() {
 
   useEffect(() => {
     fetch(
-      'https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/main/fruit.json'
+      'https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/main/fruit.json',
+      { cache: 'no-cache' }
     )
       .then((response) => response.json())
       .then((fruits) => {
@@ -37,7 +38,13 @@ function FetchAPI() {
     <div className="flex flex-col justify-center">
       <div className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
         <div className="w-full md:w-1/3 bg-white grid place-items-center">
-          <img src={fruit.img} alt={fruit.name} className="rounded-xl" />
+          <img
+            src={fruit.img}
+            alt={fruit.name}
+            className="rounded-xl"
+            width={480}
+            height={510}
+          />
         </div>
         <div className="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
           <div className="flex justify-between item-center">
