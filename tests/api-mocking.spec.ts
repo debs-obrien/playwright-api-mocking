@@ -12,7 +12,7 @@ test("mocks a fruit and doesn't call api", async ({ page }) => {
           family: 'Rosaceae',
           order: 'Rosales',
           genus: 'Fragaria',
-          img: 'https://upload.wikimedia.org/wikipedia/commons/7/73/La_Trinidad_strawberries.jpg?20070506152740',
+          img: './images/La_Trinidad_strawberries.jpg?20070506152740',
           nutritions: {
             calories: 29,
             fat: 0.4,
@@ -52,7 +52,6 @@ test('gets the json from api and adds a star rating to each fruit', async ({
   // Go to the page
   await page.goto('/');
   // Assert that the stars are visible
-  await page.waitForTimeout(3000);
   await expect(page.getByRole('img', { name: 'star' })).toBeVisible();
   await expect(page.getByText('5', { exact: true })).toBeVisible();
 });
@@ -82,6 +81,5 @@ test('gets the json from HAR and checks the stars have been added for each fruit
   // Go to the page
   await page.goto('/');
   // Assert that the stars are visible
-  await page.waitForTimeout(3000);
   await expect(page.getByRole('img', { name: 'star' })).toBeVisible();
 });
