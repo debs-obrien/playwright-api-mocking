@@ -1,23 +1,23 @@
-import { useState, useEffect } from 'react'
-import './App.css'
+import { useState, useEffect } from 'react';
+import './App.css';
 
 type Fruit = {
-  name: string
-  family: string
-  genus: string
+  name: string;
+  family: string;
+  genus: string;
   nutritions: {
-    calories: number
-    fat: number
-    sugar: number
-    carbohydrates: number
-    protein: number
-  }
-  img: string
-  stars: number
-}
+    calories: number;
+    fat: number;
+    sugar: number;
+    carbohydrates: number;
+    protein: number;
+  };
+  img: string;
+  stars: number;
+};
 
 function FetchAPI() {
-  const [fruit, setFruit] = useState<Fruit | null>(null)
+  const [fruit, setFruit] = useState<Fruit | null>(null);
 
   useEffect(() => {
     fetch(
@@ -25,12 +25,12 @@ function FetchAPI() {
     )
       .then((response) => response.json())
       .then((fruits) => {
-        setFruit(fruits[Math.floor(Math.random() * fruits.length)])
-      })
-  }, [])
+        setFruit(fruits[Math.floor(Math.random() * fruits.length)]);
+      });
+  }, []);
 
   if (fruit === null) {
-    return 'Loading...'
+    return 'Loading...';
   }
 
   return (
@@ -79,7 +79,7 @@ function FetchAPI() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function App() {
@@ -94,7 +94,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
