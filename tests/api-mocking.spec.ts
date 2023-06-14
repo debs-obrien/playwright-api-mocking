@@ -12,7 +12,7 @@ test("mocks a fruit and doesn't call api", async ({ page }) => {
           family: 'Rosaceae',
           order: 'Rosales',
           genus: 'Fragaria',
-          img: './images/La_Trinidad_strawberries.jpg?20070506152740',
+          img: './images/La_Trinidad_strawberries.jpg',
           nutritions: {
             calories: 29,
             fat: 0.4,
