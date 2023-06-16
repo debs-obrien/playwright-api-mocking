@@ -230,7 +230,7 @@
     "family": "Cucurbitaceae",
     "order": "Cucurbitaceae",
     "genus": "Cucumis",
-    "img": "Philippines_Cucumis_melo.jpg",
+    "img": "https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/Philippines_Cucumis_melo.jpg",
     "nutritions": {
       "calories": 34,
       "fat": 0,
