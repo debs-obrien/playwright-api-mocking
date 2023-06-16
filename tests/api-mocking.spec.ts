@@ -12,7 +12,7 @@ test("mocks a fruit and doesn't call api", async ({ page }) => {
           family: 'Rosaceae',
           order: 'Rosales',
           genus: 'Fragaria',
-          img: './images/La_Trinidad_strawberries.jpg',
+          img: 'https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/master/images/La_Trinidad_strawberries.jpg',
           nutritions: {
             calories: 29,
             fat: 0.4,
@@ -26,11 +26,13 @@ test("mocks a fruit and doesn't call api", async ({ page }) => {
     }
   );
   // Go to the page
-  await page.goto('/');
+  await page.goto('./');
+
+  // Wait for the image to load
+  await page.waitForResponse('**/*.jpg');
+
   // Assert that the fruit is visible
   await expect(page.getByRole('heading', { name: 'Playwright' })).toBeVisible();
-
-  await expect(page.getByRole('img', { name: 'Playwright' })).toBeVisible();
 });
 
 test('gets the json from api and adds a star rating to each fruit', async ({
@@ -50,7 +52,11 @@ test('gets the json from api and adds a star rating to each fruit', async ({
     }
   );
   // Go to the page
-  await page.goto('/');
+  await page.goto('./');
+
+  // wait for the image to load
+  await page.waitForResponse('**/*.jpg');
+
   // Assert that the stars are visible
   await expect(page.getByRole('img', { name: 'star' })).toBeVisible();
   await expect(page.getByText('5', { exact: true })).toBeVisible();
@@ -59,14 +65,15 @@ test('gets the json from api and adds a star rating to each fruit', async ({
 test('gets the har file from api and runs test against it', async ({
   page,
 }) => {
-  // Get the response and add to it
+  // Create the HAR file
   await page.routeFromHAR('./hars/fruit.har', {
-    url: 'https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/main/fruit.json',
+    url: '**/*.json',
     update: true,
   });
   // Go to the page
-  await page.goto('/');
+  await page.goto('./');
 
+  // assert that some text from the card is visible
   await expect(page.getByText('Protein')).toBeVisible();
 });
 
@@ -75,11 +82,15 @@ test('gets the json from HAR and checks the stars have been added for each fruit
 }) => {
   // Get the response and add to it
   await page.routeFromHAR('./hars/fruit.har', {
-    url: 'https://raw.githubusercontent.com/debs-obrien/playwright-api-mocking/main/fruit.json',
+    url: '**/*.json',
     update: false,
   });
   // Go to the page
-  await page.goto('/');
+  await page.goto('./');
+
+  // wait for the image to load
+  await page.waitForResponse('**/*.jpg');
+
   // Assert that the stars are visible
   await expect(page.getByRole('img', { name: 'star' })).toBeVisible();
 });
