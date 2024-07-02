@@ -1,4 +1,4 @@
-# playwright-api-mocking
+# playwright API Mocking
 
 When working with third party API's it is better to mock the API call rather than hit the API especially when they are API's that you do not control. You might also want to mock an API when in development mode and the API hasn't been written yet. Mocking the API allows you to finish developing your component and write the tests and then when the API is ready you can just swap out the mock for the real API call.
 
