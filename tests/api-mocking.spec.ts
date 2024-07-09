@@ -60,7 +60,26 @@ test('gets the json from api and adds a star rating to each fruit', async ({
   // Assert that the stars are visible
   await expect(page.getByRole('img', { name: 'star' })).toBeVisible();
   await expect(page.getByText('5', { exact: true })).toBeVisible();
+
 });
+
+test('monitor all requests and responses', async ({ page }) => {
+
+  page.on('request', request => console.log('>>', request.method(), request.url()));
+  page.on('response', response => console.log('<<', response.status(), response.url()));
+
+  await page.goto('./');
+});
+
+
+
+
+
+
+
+
+
+
 
 test('gets the har file from api and runs test against it', async ({
   page,
