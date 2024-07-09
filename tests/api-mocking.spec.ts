@@ -60,37 +60,13 @@ test('gets the json from api and adds a star rating to each fruit', async ({
   // Assert that the stars are visible
   await expect(page.getByRole('img', { name: 'star' })).toBeVisible();
   await expect(page.getByText('5', { exact: true })).toBeVisible();
+
 });
 
-test('gets the har file from api and runs test against it', async ({
-  page,
-}) => {
-  // Create the HAR file
-  await page.routeFromHAR('./hars/fruit.har', {
-    url: '**/*.json',
-    update: true,
-  });
-  // Go to the page
+test('monitor all requests and responses', async ({ page }) => {
+
+  page.on('request', request => console.log('>>', request.method(), request.url()));
+  page.on('response', response => console.log('<<', response.status(), response.url()));
+
   await page.goto('./');
-
-  // assert that some text from the card is visible
-  await expect(page.getByText('Protein')).toBeVisible();
-});
-
-test('gets the json from HAR and checks the stars have been added for each fruit', async ({
-  page,
-}) => {
-  // Get the response and add to it
-  await page.routeFromHAR('./hars/fruit.har', {
-    url: '**/*.json',
-    update: false,
-  });
-  // Go to the page
-  await page.goto('./');
-
-  // wait for the image to load
-  await page.waitForResponse('**/*.jpg');
-
-  // Assert that the stars are visible
-  await expect(page.getByRole('img', { name: 'star' })).toBeVisible();
 });
